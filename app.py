@@ -84,6 +84,10 @@ def load_model():
 
 model = load_model()
 
+print("MODEL TYPE:", type(model))
+print("MODEL STEPS:", model.named_steps)
+print("TFIDF FITTED:", hasattr(model.named_steps['tfidf'], 'idf_'))
+
 
 # ======================
 # SENTIMENT MAPPING
